@@ -145,6 +145,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e061adb36c57f1248a0d9ddcf56a2ae3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameManager: {fileID: 0}
+  player: {fileID: 6060163736912804672, guid: 0c02d8718376b834c9f2f444a0eb8e10, type: 3}
+  patrolRoute: {fileID: 0}
+  locations: []
 --- !u!195 &5613249724760062972
 NavMeshAgent:
   m_ObjectHideFlags: 0

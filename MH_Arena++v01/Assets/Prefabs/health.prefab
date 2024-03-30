@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4962462094846603967}
-  - component: {fileID: 2933618885755272490}
   m_Layer: 0
   m_Name: health
   m_TagString: Untagged
@@ -35,18 +34,6 @@ Transform:
   - {fileID: 8587111459912826051}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2933618885755272490
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1723572668151462928}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 059c85e749ad9314883d4c5b36acba19, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1974264350477906543
 GameObject:
   m_ObjectHideFlags: 0
@@ -58,7 +45,6 @@ GameObject:
   - component: {fileID: 8587111459912826051}
   - component: {fileID: 7092292739616015363}
   - component: {fileID: 2307762289021672820}
-  - component: {fileID: 3289273601504001269}
   m_Layer: 0
   m_Name: Particle System
   m_TagString: Untagged
@@ -4822,6 +4808,8 @@ ParticleSystemRenderer:
   m_ReflectionProbeUsage: 0
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -4860,13 +4848,15 @@ ParticleSystemRenderer:
   m_RenderAlignment: 0
   m_Pivot: {x: 0, y: 0, z: 0}
   m_Flip: {x: 0, y: 0, z: 0}
-  m_UseCustomVertexStreams: 0
   m_EnableGPUInstancing: 1
   m_ApplyActiveColorSpace: 1
   m_AllowRoll: 1
   m_FreeformStretching: 0
   m_RotateWithStretchDirection: 1
+  m_UseCustomVertexStreams: 0
   m_VertexStreams: 00010304
+  m_UseCustomTrailVertexStreams: 0
+  m_TrailVertexStreams: 00010304
   m_Mesh: {fileID: 0}
   m_Mesh1: {fileID: 0}
   m_Mesh2: {fileID: 0}
@@ -4876,18 +4866,6 @@ ParticleSystemRenderer:
   m_MeshWeighting2: 1
   m_MeshWeighting3: 1
   m_MaskInteraction: 0
---- !u!114 &3289273601504001269
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1974264350477906543}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 059c85e749ad9314883d4c5b36acba19, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &5744120132644147046
 GameObject:
   m_ObjectHideFlags: 0
@@ -4900,7 +4878,6 @@ GameObject:
   - component: {fileID: 882830741862799536}
   - component: {fileID: 6975945237079408121}
   - component: {fileID: 3130740575269720433}
-  - component: {fileID: 74461705117256057}
   m_Layer: 0
   m_Name: Capsule1 (1)
   m_TagString: Untagged
@@ -4948,6 +4925,8 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -4996,18 +4975,6 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &74461705117256057
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5744120132644147046}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 059c85e749ad9314883d4c5b36acba19, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &8713835469414527594
 GameObject:
   m_ObjectHideFlags: 0
@@ -5020,7 +4987,7 @@ GameObject:
   - component: {fileID: 3218786839273992142}
   - component: {fileID: 6213606703266206018}
   - component: {fileID: 6132538616239389843}
-  - component: {fileID: 1905835822350345192}
+  - component: {fileID: 419911662621781329}
   m_Layer: 0
   m_Name: Capsule1
   m_TagString: Untagged
@@ -5068,6 +5035,8 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -5116,7 +5085,7 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1905835822350345192
+--- !u!114 &419911662621781329
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5128,3 +5097,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 059c85e749ad9314883d4c5b36acba19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameManager: {fileID: 0}

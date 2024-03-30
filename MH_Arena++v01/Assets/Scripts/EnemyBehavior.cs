@@ -33,7 +33,7 @@ public class EnemyBehavior : MonoBehaviour
         player = GameObject.Find("Player") .transform;
         InitializePatrolRoute();
         MoveToNextPatrolLocation();
-        gameManager = GameObject.Find("Game Manager").GetComponent<GameBehavior>();
+        gameManager = GameObject.Find("GameManager").GetComponent<GameBehavior>();
     }
 
     private void Update()
